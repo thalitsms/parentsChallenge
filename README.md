@@ -1,10 +1,10 @@
-# SpringBoot WebMVC Parent-Child Challenge
+# 🚀 SpringBoot WebMVC Parent-Child Challenge
 
-## Overview
+## 📖 Overview
 
-This project revolves around a system with two core tables: `PARENT` and `CHILD`. They have the following data:
+In this challenge, you'll embark on a journey through the familial relationships between parents and their children, represented by two main tables: `PARENT` and `CHILD`.
 
-### PARENT:
+### 🧑‍🦱 PARENT Table:
 
 | Id | Name |
 |---|------|
@@ -14,7 +14,7 @@ This project revolves around a system with two core tables: `PARENT` and `CHILD`
 | 4 | Lucy |
 | 5 | Mark |
 
-### CHILD:
+### 👶 CHILD Table:
 
 | Id | Name   | FATHER_ID | MOTHER_ID |
 |----|-------|-----------|-----------|
@@ -24,26 +24,32 @@ This project revolves around a system with two core tables: `PARENT` and `CHILD`
 | 4  | Claire| 1         | 4         |
 | 5  | Simon | NULL      | 4         |
 
-## Requirements
+## 🎯 Challenge Requirements
 
-Develop a SpringBoot WebMVC REST Service with the following endpoints:
+Dive deep and create a SpringBoot WebMVC REST service that offers the following:
 
-1. **GET `/fathers`**: Returns a list of all FATHER names.
-2. **GET `/fathers/multiple-children`**: Returns the names of all FATHERS that have more than one child.
-3. **GET `/children/parents`**: For each CHILD, this should return the name of his/her father and mother (if defined).
-4. **GET `/john/children-count`**: Returns the count of how many children John has.
-5. **GET `/mary/children-count`**: Returns the count of how many children Mary has.
+1. 📜 An endpoint to list all FATHER names.
+2. 🕵️‍♂️ An endpoint to fetch names of FATHERS boasting more than one child.
+3. 🌳 An endpoint that, for each sprout (CHILD), delivers the name of the protective tree branches, their father, and mother (when they're present).
+4. 🧮 An endpoint to count and tell the world how many little ones John is responsible for.
+5. 📌 An endpoint that reveals the number of Mary's offspring.
 
-**Note**: Use only SQL-92 compliant statements for database operations.
+⚠️ **Note**: Stick strictly to SQL-92 compliant statements when dancing with the database.
 
-## Setting Up
+## ⚙️ Getting Started
+
+To rise to this challenge:
 
 ```bash
-# Clone the repo
+# 📥 Clone the project repository:
 git clone https://github.com/thalitsms/parentsChallenge.git
-# Navigate to the project directory
+
+# 📁 Dive into the project directory:
 cd parentsChallenge
-# Install dependencies
+
+# 🌱 Plant the seeds and let them grow (install dependencies):
 mvn install
-# Run the application
+
+# 🚴‍♂️ Set forth and start the SpringBoot application:
 mvn spring-boot:run
+
